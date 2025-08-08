@@ -1,4 +1,4 @@
-#**Лабораторная работа. Базовая настройка коммутатора**
+# **Лабораторная работа. Базовая настройка коммутатора**
 
 1.Часть 1. Создание сети и проверка настроек коммутатора по умолчанию
 
@@ -53,6 +53,32 @@ address is 0001.43c6.07c2 (bia 0001.43c6.07c2)
 Switch>show ip interface vlan 1  
 Vlan1 is administratively down, line protocol is down  
 Internet protocol processing disabled
+
+  2.Часть 2. Настройка базовых параметров сетевых устройств  
+>b.	Назначьте IP-адрес интерфейсу SVI на коммутаторе. Благодаря этому вы получите возможность удаленного управления коммутатором.
+
+Решение  
+Switch(config-if)#ip address 192.168.1.2 255.255.255.0  
+Switch(config-if)#  
+>d.	Настройте каналы виртуального соединения для удаленного управления (vty), чтобы коммутатор разрешил доступ через Telnet. Если не настроить пароль VTY, будет невозможно подключиться к коммутатору по протоколу Telnet.
+
+Switch(config)#line vty 04  
+Switch(config-line)#transport input telnet 
+>Настройте IP-адрес на компьютере PC-A
+
+<img width="623" height="604" alt="image" src="https://github.com/user-attachments/assets/ab8c3a18-8c1e-4dd2-8561-2168771ac9ba"/>
+
+>Протестируйте сквозное соединение, отправив эхо-запрос.
+
+<img width="410" height="386" alt="image" src="https://github.com/user-attachments/assets/e7df24d4-e70c-479f-8897-5596f4a5b149" />
+
+>Проверьте удаленное управление коммутатором S1
+
+<img width="392" height="155" alt="image" src="https://github.com/user-attachments/assets/c498b114-06bd-4599-b529-b68dd341c042" />
+
+
+
+
 
 
   
