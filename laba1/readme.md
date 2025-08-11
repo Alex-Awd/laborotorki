@@ -19,7 +19,7 @@ Switch#startup configuration
 Данное собщение появляется потому что ошибка в коменде, правильная команда show startup-config  
 >d.	Изучите характеристики SVI для VLAN 1.
 
-Switch#show interfaces vlan 1
+Switch#**show interfaces vlan 1**
 Vlan1 is administratively down, line protocol is down
 Hardware is CPU Interface, address is 0001.43c6.07c2 (bia 0001.43c6.07c2)
 MTU 1500 bytes, BW 100000 Kbit, DLY 1000000 usec,
@@ -70,20 +70,26 @@ Internet protocol processing disabled
 <img width="241" height="56" alt="image" src="https://github.com/user-attachments/assets/bc95eda5-0090-453a-8645-b2344f9ff6db" /> 
 
 >Команда login включает доступ к привелигированному режиму EXEC
->В связи с тем что команда **paswword** хранит пароль в открытом виде выполним другую команду, которая позволяет хранить пароль в шифрованном виде
-
+>В связи с тем что команда **paswword** хранит пароль в открытом виде выполним другую команду, которая позволяет хранить пароль в шифрованном виде.
 <img width="444" height="97" alt="image" src="https://github.com/user-attachments/assets/4944d8c0-22d1-44c6-a34e-37c24dbe115f" />
+
+>Защита доступа к линиям VTY
+<img width="241" height="59" alt="image" src="https://github.com/user-attachments/assets/08177b55-383d-497d-8a00-daa77e43b568" />
+
+>Зашифруем пароли глобальной командой
+
+<img width="456" height="57" alt="image" src="https://github.com/user-attachments/assets/90d83045-eedb-4338-bbb3-35d546c8dba0" />
 
 
 >b.	Назначьте IP-адрес интерфейсу SVI на коммутаторе. Благодаря этому вы получите возможность удаленного управления коммутатором.
 
 Решение  
-Switch(config-if)#ip address 192.168.1.2 255.255.255.0  
+Switch(config-if)#**ip address 192.168.1.2 255.255.255.0**  
 Switch(config-if)#  
 >d.	Настройте каналы виртуального соединения для удаленного управления (vty), чтобы коммутатор разрешил доступ через Telnet. Если не настроить пароль VTY, будет невозможно подключиться к коммутатору по протоколу Telnet.
 
-Switch(config)#line vty 04  
-Switch(config-line)#transport input telnet 
+Switch(config)#**line vty 04**  
+Switch(config-line)#**transport input telnet** 
 >Настройте IP-адрес на компьютере PC-A
 
 <img width="623" height="604" alt="image" src="https://github.com/user-attachments/assets/ab8c3a18-8c1e-4dd2-8561-2168771ac9ba"/>
