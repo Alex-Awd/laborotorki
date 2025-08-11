@@ -55,6 +55,26 @@ Vlan1 is administratively down, line protocol is down
 Internet protocol processing disabled
 
   2.Часть 2. Настройка базовых параметров сетевых устройств  
+  >Топология сети
+<img width="459" height="157" alt="image" src="https://github.com/user-attachments/assets/5e5a54c4-9087-4112-8e47-7f8c5f5a86d6" />
+
+>Таблица адресации
+
+| Устройства | Интерфейс | ip адрес/префикс | 
+|------------|-----------|------------------|
+|     S1     |   Vlan 1  |  192.168.1.2/24  |
+|     PC-a   |    NIC    |  192.168.1.10/24 |
+
+>Задаем пароль для консольного подключения
+
+<img width="241" height="56" alt="image" src="https://github.com/user-attachments/assets/bc95eda5-0090-453a-8645-b2344f9ff6db" /> 
+
+>Команда login включает доступ к привелигированному режиму EXEC
+>В связи с тем что команда **paswword** хранит пароль в открытом виде выполним другую команду, которая позволяет хранить пароль в шифрованном виде
+
+<img width="444" height="97" alt="image" src="https://github.com/user-attachments/assets/4944d8c0-22d1-44c6-a34e-37c24dbe115f" />
+
+
 >b.	Назначьте IP-адрес интерфейсу SVI на коммутаторе. Благодаря этому вы получите возможность удаленного управления коммутатором.
 
 Решение  
