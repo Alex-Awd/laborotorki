@@ -42,7 +42,34 @@ Switch2
 
 <img width="466" height="132" alt="image" src="https://github.com/user-attachments/assets/58889652-5e70-4d2f-b3ea-c1184c992f5f" />  
 
-<img width="440" height="131" alt="image" src="https://github.com/user-attachments/assets/2e9866a5-3af7-4cd9-a65b-fab6c62b9eb6" />
+<img width="440" height="131" alt="image" src="https://github.com/user-attachments/assets/2e9866a5-3af7-4cd9-a65b-fab6c62b9eb6" />  
+
+>c.	Назначьте cisco в качестве паролей консоли и VTY.
+
+<img width="459" height="145" alt="image" src="https://github.com/user-attachments/assets/524369cd-d887-47b1-bb17-55d55d48f76f" />  
+
+<img width="413" height="125" alt="image" src="https://github.com/user-attachments/assets/0e64f0ba-4b46-412c-a6f5-7b506841de79" />  
+
+>d.	Назначьте class в качестве пароля доступа к привилегированному режиму EXEC.
+
+<img width="451" height="106" alt="image" src="https://github.com/user-attachments/assets/c6db729f-89f0-40fd-a223-c09abd11f37f" />  
+
+<img width="434" height="87" alt="image" src="https://github.com/user-attachments/assets/a91a0291-4b5b-440f-aef4-c7f6d772650e" />  
+
+>Шаг 1. Запишите МАС-адреса сетевых устройств.
+
+>a.	Откройте командную строку на PC-A и PC-B и введите команду ipconfig /all.
+
+>Назовите физические адреса адаптера Ethernet.
+
+>MAC-адрес компьютера PC-A: **00D0.FFB1.229C**
+
+>MAC-адрес компьютера PC-B: **00E0.B0CE.DB2E**
+
+
+
+
+
 
 
 
