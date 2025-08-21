@@ -40,6 +40,12 @@ Switch2
 
 >b.	Настройте IP-адреса, как указано в таблице адресации.
 
+<img width="466" height="132" alt="image" src="https://github.com/user-attachments/assets/58889652-5e70-4d2f-b3ea-c1184c992f5f" />  
+
+<img width="440" height="131" alt="image" src="https://github.com/user-attachments/assets/2e9866a5-3af7-4cd9-a65b-fab6c62b9eb6" />
+
+
+
 
 
 
