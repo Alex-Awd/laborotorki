@@ -24,7 +24,38 @@
 
 # Часть 2. Ручная настройка IPv6-адресов  
 ## Шаг 1. Назначьте IPv6-адреса интерфейсам Ethernet на R1.  
-### a.Назначьте глобальные индивидуальные IPv6-адреса, указанные в таблице адресации обоим интерфейсам Ethernet на R1
+### a.Назначьте глобальные индивидуальные IPv6-адреса, указанные в таблице адресации обоим интерфейсам Ethernet на R1  
+<img width="636" height="316" alt="image" src="https://github.com/user-attachments/assets/e934aa86-008c-4b02-a40f-bc98e9b0c3d5" />  
+
+### b.Ведите команду show ipv6 interface brief, чтобы проверить, назначен ли каждому интерфейсу корректный индивидуальный IPv6-адрес.  
+<img width="448" height="149" alt="image" src="https://github.com/user-attachments/assets/f9bc3e79-0f6d-4bbb-a1fe-e88ba97d81ac" />  
+
+### c.Чтобы обеспечить соответствие локальных адресов канала индивидуальному адресу, вручную введите локальные адреса канала на каждом интерфейсе Ethernet на R1.  
+<img width="331" height="199" alt="image" src="https://github.com/user-attachments/assets/3147e540-7115-4cb5-bfb1-5c73f3016c85" />  
+
+### d.Используйте выбранную команду, чтобы убедиться, что локальный адрес связи изменен на fe80::1.  
+<img width="428" height="118" alt="image" src="https://github.com/user-attachments/assets/620489cd-cb14-49ed-8a6a-55fd6e0bec93" />  
+
+>группы многоадресной рассылки назначены интерфейсу G0/0/0 отмечены желтым цветом
+
+<img width="427" height="319" alt="image" src="https://github.com/user-attachments/assets/a2301ee1-e3fb-43b6-bf44-3620869f2fb6" />  
+
+## Шаг 2. Активируйте IPv6-маршрутизацию на R1.  
+### a.В командной строке на PC-B введите команду ipconfig, чтобы получить данные IPv6-адреса, назначенного интерфейсу ПК.  
+<img width="471" height="179" alt="image" src="https://github.com/user-attachments/assets/087488bc-48eb-4e9a-a701-bc549b01d00c" />
+
+Индивидуальный IPv6-адрес сетевой интерфейсной карте (NIC) на PC-B не назначен  
+### b.Активируйте IPv6-маршрутизацию на R1 с помощью команды IPv6 unicast-routing.  
+R1(config)#ipv6 unicast-routing  
+
+R1(config)#  
+
+### c.Теперь, когда R1 входит в группу многоадресной рассылки всех маршрутизаторов, еще раз введите команду ipconfig на PC-B. Проверьте данные IPv6-адреса.
+
+
+
+
+
 
 
 
