@@ -20,7 +20,11 @@
 
 ## Шаг 2. Настройте коммутатор.
 ### Назначьте имя хоста и настройте основные параметры устройства.  
-<img width="460" height="266" alt="image" src="https://github.com/user-attachments/assets/787f05e6-afa6-4e79-bd40-c6bd4e668991" />
+<img width="460" height="266" alt="image" src="https://github.com/user-attachments/assets/787f05e6-afa6-4e79-bd40-c6bd4e668991" />  
+
+# Часть 2. Ручная настройка IPv6-адресов  
+## Шаг 1. Назначьте IPv6-адреса интерфейсам Ethernet на R1.  
+### a.Назначьте глобальные индивидуальные IPv6-адреса, указанные в таблице адресации обоим интерфейсам Ethernet на R1
 
 
 
