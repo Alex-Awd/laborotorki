@@ -12,7 +12,19 @@
 
 >Устанавливаем шаблон dual-ipv4-and-ipv6 в качестве шаблона SDM по умолчанию
 
-<img width="617" height="211" alt="image" src="https://github.com/user-attachments/assets/5ac33e9d-940d-4dbf-986b-47e5f3a055c9" />
+<img width="617" height="211" alt="image" src="https://github.com/user-attachments/assets/5ac33e9d-940d-4dbf-986b-47e5f3a055c9" />  
+
+## Шаг 1. Настройте маршрутизатор.
+### Назначьте имя хоста и настройте основные параметры устройства.  
+<img width="278" height="310" alt="image" src="https://github.com/user-attachments/assets/c1dd652b-1b0b-4fba-a65b-f401a0b9fced" />  
+
+## Шаг 2. Настройте коммутатор.
+### Назначьте имя хоста и настройте основные параметры устройства.  
+<img width="460" height="266" alt="image" src="https://github.com/user-attachments/assets/787f05e6-afa6-4e79-bd40-c6bd4e668991" />
+
+
+
+
 
 
 
