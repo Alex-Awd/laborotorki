@@ -77,6 +77,18 @@ PC-A
 
 >Введите команду tracert на PC-A, чтобы проверить наличие сквозного подключения к PC-B.
 
+<img width="476" height="120" alt="image" src="https://github.com/user-attachments/assets/a8f52e7c-b03d-456e-a3c2-6dc203f33f2e" />  
+
+>С PC-B отправьте эхо-запрос на PC-A.
+
+<img width="425" height="201" alt="image" src="https://github.com/user-attachments/assets/c15c9f97-12be-476b-b9b6-73e3504c27af" />  
+
+>С PC-B отправьте эхо-запрос на локальный адрес канала G0/0 на R1.
+<img width="419" height="194" alt="image" src="https://github.com/user-attachments/assets/94c8c261-55e3-4c88-9569-868ea52a7bb2" />
+
+
+
+
 
 
 
