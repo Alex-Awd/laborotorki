@@ -80,9 +80,20 @@
 #### a.	Отправьте эхо-запрос с PC-A на шлюз по умолчанию.  
 <img width="443" height="198" alt="image" src="https://github.com/user-attachments/assets/fc98f4f4-5deb-416f-b98f-8e7aed7c864a" />
 
-#### b.	Отправьте эхо-запрос с PC-A на PC-B.
+#### b.	Отправьте эхо-запрос с PC-A на PC-B.  
+<img width="423" height="233" alt="image" src="https://github.com/user-attachments/assets/a5b0b5c4-e7fd-4d93-820a-f2d2e1733d73" />
+
 #### c.	Отправьте команду ping с компьютера PC-A на коммутатор S2.  
-<img width="426" height="191" alt="image" src="https://github.com/user-attachments/assets/7ba90134-420b-4519-b96f-26cbe93b3262" />
+<img width="426" height="191" alt="image" src="https://github.com/user-attachments/assets/7ba90134-420b-4519-b96f-26cbe93b3262" />  
+
+### Шаг 2. Пройдите следующий тест с PC-B
+В окне командной строки на PC-B выполните команду tracert на адрес PC-A.
+Вопрос:
+Какие промежуточные IP-адреса отображаются в результатах?
+
+<img width="434" height="208" alt="image" src="https://github.com/user-attachments/assets/7457b3f5-5954-4c14-961a-4f90b90905b9" />
+
+
 
 
 
