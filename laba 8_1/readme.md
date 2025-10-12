@@ -37,7 +37,64 @@
 
 ### d.	Назначьте все неиспользуемые порты S1 VLAN Parking_Lot, настройте их для статического режима доступа и административно деактивируйте их. На S2 административно деактивируйте все неиспользуемые порты.
 <img width="514" height="77" alt="image" src="https://github.com/user-attachments/assets/632e1f42-327b-4cf9-af40-ff98e9cf148b" />
-<img width="562" height="72" alt="image" src="https://github.com/user-attachments/assets/cb3b5bbe-d0af-4e65-a90a-b9773bd62172" />
+<img width="562" height="72" alt="image" src="https://github.com/user-attachments/assets/cb3b5bbe-d0af-4e65-a90a-b9773bd62172" />  
+
+# Шаг 8.	Назначьте сети VLAN соответствующим интерфейсам коммутатора.
+### a.	Назначьте используемые порты соответствующей VLAN (указанной в таблице VLAN выше) и настройте их для режима статического доступа.
+<img width="425" height="83" alt="image" src="https://github.com/user-attachments/assets/2db7d4e8-4c63-4909-b601-e08bbfada53e" />
+
+### b.	Убедитесь, что VLAN назначены на правильные интерфейсы.  
+<img width="637" height="309" alt="image" src="https://github.com/user-attachments/assets/883a06ed-153f-4093-9d36-3661db4fbb59" />  
+
+#cШаг 9.	Вручную настройте интерфейс S1 F0/5 в качестве транка 802.1Q.
+### a. Измените режим порта коммутатора, чтобы принудительно создать магистральный канал.
+<img width="299" height="38" alt="image" src="https://github.com/user-attachments/assets/4e3163ed-94f7-4699-b3fb-412bdaeba25e" />
+
+### b.	В рамках конфигурации транка  установите для native  VLAN значение 1000.
+### c.	В качестве другой части конфигурации магистрали укажите, что VLAN 100, 200 и 1000 могут проходить по транку.
+<img width="502" height="139" alt="image" src="https://github.com/user-attachments/assets/0e9fadf9-003b-48da-863e-e1acec6dfc9c" />
+
+### e.	Проверьте состояние транка.
+<img width="623" height="224" alt="image" src="https://github.com/user-attachments/assets/29cf9cfd-abe3-4888-8a1a-703ef55166a5" /> 
+
+# Шаг 1.	Настройте R1 с пулами DHCPv4 для двух поддерживаемых подсетей. Ниже приведен только пул DHCP для подсети A
+### a.	Исключите первые пять используемых адресов из каждого пула адресов.
+<img width="520" height="38" alt="image" src="https://github.com/user-attachments/assets/12ca1cbf-6094-4762-a593-77d09dc08953" />
+
+### b.	Создайте пул DHCP (используйте уникальное имя для каждого пула).
+### c.	Укажите сеть, поддерживающую этот DHCP-сервер.
+### d.	В качестве имени домена укажите CCNA-lab.com.
+### e.	Настройте соответствующий шлюз по умолчанию для каждого пула DHCP.
+### f.	Настройте время аренды на 2 дня 12 часов и 30 минут.
+<img width="496" height="99" alt="image" src="https://github.com/user-attachments/assets/e476e3bf-372b-4205-816a-73b5beba6cdc" />
+
+### g.	Затем настройте второй пул DHCPv4, используя имя пула R2_Client_LAN и вычислите сеть, маршрутизатор по умолчанию, и используйте то же имя домена и время аренды, что и предыдущий пул DHCP.
+<img width="528" height="97" alt="image" src="https://github.com/user-attachments/assets/959eb1a2-a9ba-40f7-96e5-f00a85b93e8d" />  
+
+# Шаг 3.	Проверка конфигурации сервера DHCPv4
+### a.	Чтобы просмотреть сведения о пуле, выполните команду show ip dhcp pool.
+<img width="632" height="442" alt="image" src="https://github.com/user-attachments/assets/42476ac7-953c-4ead-aeeb-238f75e718bb" />
+
+# Шаг 4.	Попытка получить IP-адрес от DHCP на PC-A
+### a.	Из командной строки компьютера PC-A выполните команду ipconfig /all
+<img width="632" height="442" alt="image" src="https://github.com/user-attachments/assets/12ad9cf6-2f91-4c34-87da-9496ad5852f1" /> 
+
+### c.	Проверьте подключение с помощью пинга IP-адреса интерфейса R0 G0/0/1.
+<img width="458" height="221" alt="image" src="https://github.com/user-attachments/assets/24fca59b-9a65-4542-87f6-6333baf64b84" />  
+
+# Шаг 1.	Настройка R2 в качестве агента DHCP-ретрансляции для локальной сети на G0/0/1
+### a.	Настройте команду ip helper-address на G0/0/1, указав IP-адрес G0/0/0 R1.
+<img width="531" height="109" alt="image" src="https://github.com/user-attachments/assets/5835b5cf-faea-4c69-bc7b-389a7f73fc28" />
+
+
+
+
+
+
+
+
+
+
 
 
 
