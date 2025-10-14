@@ -60,10 +60,13 @@ b.	Настройте интерфейс G0/0/1 на R1, чтобы предос
 ### a.	Перезапустите PC-B.
 ### b.	Откройте командную строку на PC-B и выполните команду ipconfig /all и проверьте выходные данные, чтобы увидеть результаты операции ретрансляции DHCPv6.  
 <img width="637" height="223" alt="image" src="https://github.com/user-attachments/assets/a42b3d64-fbd8-4864-b044-aaa45baaf45e" />  
+
 > Доп указания
 
 <img width="533" height="207" alt="image" src="https://github.com/user-attachments/assets/067eebfa-302f-417f-b9af-ea12253454ec" />  
-<img width="633" height="284" alt="image" src="https://github.com/user-attachments/assets/b601918e-fcf3-4ad0-b6b5-b3e60f86edde" />
+<img width="633" height="284" alt="image" src="https://github.com/user-attachments/assets/b601918e-fcf3-4ad0-b6b5-b3e60f86edde" /> 
+<img width="523" height="372" alt="image" src="https://github.com/user-attachments/assets/dd8b26a3-db32-45e9-a430-b6b98aed7165" />
+
 
 
 
