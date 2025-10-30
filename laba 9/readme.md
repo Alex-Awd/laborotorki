@@ -100,7 +100,13 @@ o	Aging type: неактивный
 <img width="397" height="78" alt="image" src="https://github.com/user-attachments/assets/d5cb2109-d01a-4c5b-97c6-d4e136204d9d" />
 
 #### c.	Убедитесь, что защита BPDU и PortFast включены на соответствующих портах.  
-<img width="520" height="225" alt="image" src="https://github.com/user-attachments/assets/7c224037-3eea-4b6a-bc50-4e4bfeeb6710" />
+<img width="520" height="225" alt="image" src="https://github.com/user-attachments/assets/7c224037-3eea-4b6a-bc50-4e4bfeeb6710" />  
+
+### Шаг 7. Проверьте наличие сквозного ⁪подключения.
+<img width="478" height="194" alt="image" src="https://github.com/user-attachments/assets/e2e360d0-110a-4c19-9ed5-704c049eada2" />  
+<img width="496" height="218" alt="image" src="https://github.com/user-attachments/assets/07252c06-f767-4284-9cb8-37a1896cd74e" />
+
+
 
 
 
