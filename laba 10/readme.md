@@ -39,8 +39,31 @@
 
 ### d.	добавьте конфигурацию, необходимую для OSPF для обработки R2 Loopback 1 как сети точка-точка. Это приводит к тому, что OSPF объявляет Loopback 1 использует маску подсети интерфейса.
 <img width="414" height="38" alt="image" src="https://github.com/user-attachments/assets/dfa93bd3-bcac-4a0a-81ed-7f1e36433216" />
+
 ### e.	Только на R2 добавьте конфигурацию, необходимую для предотвращения отправки объявлений OSPF в сеть Loopback 1.  
 <img width="407" height="54" alt="image" src="https://github.com/user-attachments/assets/48494986-5d2d-424d-b137-1d2423f50ade" />
+
+### f.	Измените базовую пропускную способность для маршрутизаторов. После этой настройки перезапустите OSPF с помощью команды clear ip ospf process . Обратите внимание на сообщение консоли после установки новой опорной полосы пропускания.
+<img width="610" height="70" alt="image" src="https://github.com/user-attachments/assets/3fef7ae8-31ae-45a9-afa1-fafae89739ca" />
+<img width="616" height="68" alt="image" src="https://github.com/user-attachments/assets/ecdf16ab-d773-4dd1-9427-ce3baf0c3f49" />
+
+## Шаг 2. Убедитесь, что оптимизация OSPFv2 реализовалась.
+
+### a.	Выполните команду show ip ospf interface g0/0/1 на R1 и убедитесь, что приоритет интерфейса установлен равным 50, а временные интервалы — Hello 30, Dead 120, а тип сети по умолчанию — Broadcast
+<img width="609" height="280" alt="image" src="https://github.com/user-attachments/assets/2900ef1d-7c92-46a9-ab7f-c105a3763ec7" />  
+
+### b.	На R1 выполните команду show ip route ospf, чтобы убедиться, что сеть R2 Loopback1 присутствует в таблице маршрутизации. Обратите внимание на разницу в метрике между этим выходным и предыдущим выходным. Также обратите внимание, что маска теперь составляет 24 бита, в отличие от 32 битов, ранее объявленных.  
+<img width="587" height="54" alt="image" src="https://github.com/user-attachments/assets/3c60dfc6-6cc6-4745-b6ba-9ad0a12787f2" />  
+
+### c.	Введите команду show ip route ospf на маршрутизаторе R2. Единственная информация о маршруте OSPF должна быть распространяемый по умолчанию маршрут R1.
+<img width="567" height="53" alt="image" src="https://github.com/user-attachments/assets/a6e5f6e9-cb5d-4979-97be-2d785767c869" />  
+
+### d.	Запустите Ping до адреса интерфейса R1 Loopback 1 из R2. Выполнение команды ping должно быть успешным.  
+<img width="565" height="113" alt="image" src="https://github.com/user-attachments/assets/4ee0b26a-94d2-4149-bde2-b65f7c297092" />
+
+
+
+
 
 
 
