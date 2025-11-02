@@ -23,7 +23,30 @@
 <img width="625" height="67" alt="image" src="https://github.com/user-attachments/assets/a2ac737a-6771-4528-afa4-1120260db0d5" /> 
 
 ### h.	Запустите Ping до  адреса интерфейса R2 Loopback 1 из R1. Выполнение команды ping должно быть успешным.
-<img width="576" height="108" alt="image" src="https://github.com/user-attachments/assets/c8e62e71-0a08-4108-a6bc-8db732028544" />
+<img width="576" height="108" alt="image" src="https://github.com/user-attachments/assets/c8e62e71-0a08-4108-a6bc-8db732028544" /> 
+
+# Часть 3. Оптимизация и проверка конфигурации OSPFv2 для одной области
+## Шаг 1. Реализация различных оптимизаций на каждом маршрутизаторе.
+### a.	На R1 настройте приоритет OSPF интерфейса G0/0/1 на 50, чтобы убедиться, что R1 является назначенным маршрутизатором.
+<img width="604" height="386" alt="image" src="https://github.com/user-attachments/assets/835b0376-9dfb-405d-aba0-a8ce34702e06" /> 
+
+### b.	Настройте таймеры OSPF на G0/0/1 каждого маршрутизатора для таймера приветствия, составляющего 30 секунд.  
+<img width="345" height="50" alt="image" src="https://github.com/user-attachments/assets/8fa30906-f521-4a3c-ac34-dfe2768ceac7" />
+<img width="353" height="62" alt="image" src="https://github.com/user-attachments/assets/82f167b0-e50b-466c-844d-67d1f83211a4" /> 
+
+### c.	На R1 настройте статический маршрут по умолчанию, который использует интерфейс Loopback 1 в качестве интерфейса выхода. Затем распространите маршрут по умолчанию в OSPF. Обратите внимание на сообщение консоли после установки маршрута по умолчанию.
+<img width="514" height="83" alt="image" src="https://github.com/user-attachments/assets/ae572bcf-415f-4820-8072-d68e626d8e33" /> 
+
+### d.	добавьте конфигурацию, необходимую для OSPF для обработки R2 Loopback 1 как сети точка-точка. Это приводит к тому, что OSPF объявляет Loopback 1 использует маску подсети интерфейса.
+<img width="414" height="38" alt="image" src="https://github.com/user-attachments/assets/dfa93bd3-bcac-4a0a-81ed-7f1e36433216" />
+### e.	Только на R2 добавьте конфигурацию, необходимую для предотвращения отправки объявлений OSPF в сеть Loopback 1.  
+<img width="407" height="54" alt="image" src="https://github.com/user-attachments/assets/48494986-5d2d-424d-b137-1d2423f50ade" />
+
+
+
+
+
+
 
 
 
