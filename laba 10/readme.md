@@ -19,6 +19,14 @@
 <img width="608" height="342" alt="image" src="https://github.com/user-attachments/assets/d4055a92-94f8-46e3-886a-d680b9c61588" />
 <img width="629" height="455" alt="image" src="https://github.com/user-attachments/assets/1c1974a7-c9a3-4b60-aa97-63386a097f6f" />
 
+### g.	На R1 выполните команду show ip route ospf, чтобы убедиться, что сеть R2 Loopback1 присутствует в таблице маршрутизации. Обратите внимание, что поведение OSPF по умолчанию заключается в объявлении интерфейса обратной связи в качестве маршрута узла с использованием 32-битной маски.  
+<img width="625" height="67" alt="image" src="https://github.com/user-attachments/assets/a2ac737a-6771-4528-afa4-1120260db0d5" /> 
+
+### h.	Запустите Ping до  адреса интерфейса R2 Loopback 1 из R1. Выполнение команды ping должно быть успешным.
+<img width="576" height="108" alt="image" src="https://github.com/user-attachments/assets/c8e62e71-0a08-4108-a6bc-8db732028544" />
+
+
+
 
 
 
