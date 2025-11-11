@@ -50,8 +50,8 @@
 ## Шаг 2. Убедитесь, что оптимизация OSPFv2 реализовалась.
 
 ### a.	Выполните команду show ip ospf interface g0/0/1 на R1 и убедитесь, что приоритет интерфейса установлен равным 50, а временные интервалы — Hello 30, Dead 120, а тип сети по умолчанию — Broadcast
-<img width="609" height="280" alt="image" src="https://github.com/user-attachments/assets/2900ef1d-7c92-46a9-ab7f-c105a3763ec7" />  
-
+<img width="606" height="232" alt="image" src="https://github.com/user-attachments/assets/baa65893-7c86-42b4-ae54-18fe2d094eb8" />
+  
 ### b.	На R1 выполните команду show ip route ospf, чтобы убедиться, что сеть R2 Loopback1 присутствует в таблице маршрутизации. Обратите внимание на разницу в метрике между этим выходным и предыдущим выходным. Также обратите внимание, что маска теперь составляет 24 бита, в отличие от 32 битов, ранее объявленных.  
 <img width="587" height="54" alt="image" src="https://github.com/user-attachments/assets/3c60dfc6-6cc6-4745-b6ba-9ad0a12787f2" />  
 
