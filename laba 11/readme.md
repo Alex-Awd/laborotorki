@@ -37,6 +37,18 @@
 <img width="538" height="327" alt="image" src="https://github.com/user-attachments/assets/5e7409fa-1e92-40cb-9133-e1b89769f18b" />
 <img width="572" height="232" alt="image" src="https://github.com/user-attachments/assets/b92c26ca-1a13-4c53-bf31-2de6a33d81d0" />
 
+## Шаг 2. Назначьте сети VLAN соответствующим интерфейсам коммутатора.
+### a.	Назначьте используемые порты соответствующей VLAN (указанной в таблице VLAN выше) и настройте их для режима статического доступа.
+<img width="377" height="51" alt="image" src="https://github.com/user-attachments/assets/0929617b-23ec-467c-8274-450e214db445" />
+<img width="511" height="128" alt="image" src="https://github.com/user-attachments/assets/622300e5-31c3-40f6-95ab-517f5bce76b1" />
+
+### b.	Выполните команду show vlan brief, чтобы убедиться, что сети VLAN назначены правильным интерфейсам.
+<img width="631" height="263" alt="image" src="https://github.com/user-attachments/assets/a9a8d1a1-e76d-4495-ad3e-e1ef6ec9c70e" />
+<img width="633" height="274" alt="image" src="https://github.com/user-attachments/assets/c5efcfac-d3bb-4303-854a-286873f2427f" />
+
+
+
+
 
 
 
