@@ -46,6 +46,55 @@
 <img width="631" height="263" alt="image" src="https://github.com/user-attachments/assets/a9a8d1a1-e76d-4495-ad3e-e1ef6ec9c70e" />
 <img width="633" height="274" alt="image" src="https://github.com/user-attachments/assets/c5efcfac-d3bb-4303-854a-286873f2427f" />
 
+# Часть3 Настройте транки (магистральные каналы)
+### Шаг 1. Вручную настройте магистральный интерфейс F0/1.
+
+#### a.	Измените режим порта коммутатора на интерфейсе F0/1, чтобы принудительно создать магистральную связь. Не забудьте сделать это на обоих коммутаторах.
+#### b.	В рамках конфигурации транка установите для native vlan значение 1000 на обоих коммутаторах. При настройке двух интерфейсов для разных собственных VLAN сообщения об ошибках могут отображаться временно.
+#### c.	В качестве другой части конфигурации транка укажите, что VLAN 10, 20, 30 и 1000 разрешены в транке.
+#### d.	Выполните команду show interfaces trunk для проверки портов магистрали, собственной VLAN и разрешенных VLAN через магистраль.
+<img width="478" height="111" alt="image" src="https://github.com/user-attachments/assets/91e0acc1-1ed0-47cc-ba39-3c278f8327d4" />
+<img width="527" height="145" alt="image" src="https://github.com/user-attachments/assets/f84fe8ac-3f1e-4017-823f-4ca14f4a6229" />
+<img width="593" height="206" alt="image" src="https://github.com/user-attachments/assets/679d33e7-dafa-45e9-9bea-37ef22f3b9fd" />
+<img width="548" height="199" alt="image" src="https://github.com/user-attachments/assets/ee9741b0-1684-4502-9e2c-57a1789174e2" />
+
+### Шаг 2. Вручную настройте магистральный интерфейс F0/5 на коммутаторе S1.
+a.	Настройте интерфейс S1 F0/5 с теми же параметрами транка, что и F0/1. Это транк до маршрутизатора.
+b.	Сохраните текущую конфигурацию в файл загрузочной конфигурации.
+c.	Используйте команду show interfaces trunk для проверки настроек транка.
+<img width="489" height="88" alt="image" src="https://github.com/user-attachments/assets/dcc05ee3-e7fe-4688-8ccf-3dff20fdace5" />
+<img width="567" height="267" alt="image" src="https://github.com/user-attachments/assets/c2c4380d-2649-4b8a-b98d-9e4b94afa6de" />
+
+### Шаг 1. Настройка маршрутизации между сетями VLAN на R1.
+#### a.	Активируйте интерфейс G0/0/1 на маршрутизаторе.
+#### b.	Настройте подинтерфейсы для каждой VLAN, как указано в таблице IP-адресации. Все подинтерфейсы используют инкапсуляцию 802.1Q. Убедитесь, что подинтерфейс для собственной VLAN не имеет назначенного IP-адреса. Включите описание для каждого подинтерфейса.
+#### c.	Настройте интерфейс Loopback 1 на R1 с адресацией из приведенной выше таблицы.
+#### d.	С помощью команды show ip interface brief проверьте конфигурацию подынтерфейса
+<img width="603" height="376" alt="image" src="https://github.com/user-attachments/assets/5afd7eeb-a0f7-4c79-96b2-2add0bd811f5" />
+<img width="641" height="164" alt="image" src="https://github.com/user-attachments/assets/f109eed4-364c-42d3-9c67-2ec1a7dccd10" />
+<img width="623" height="166" alt="image" src="https://github.com/user-attachments/assets/54bff207-303b-49f3-9bf8-fd3f82c802a2" />
+
+#### Шаг 2. Настройка интерфейса R2 g0/0/1 с использованием адреса из таблицы и маршрута по умолчанию с адресом следующего перехода 10.20.0.1
+<img width="472" height="68" alt="image" src="https://github.com/user-attachments/assets/949dd137-bd01-48a5-b895-efced54da5af" />
+
+### Часть 5. Настройте удаленный доступ
+#### Шаг 1. Настройте все сетевые устройства для базовой поддержки SSH.
+#### a.	Создайте локального пользователя с именем пользователя SSHadmin и зашифрованным паролем $cisco123!
+#### b.	Используйте ccna-lab.com в качестве доменного имени.
+#### c.	Генерируйте криптоключи с помощью 1024 битного модуля.
+#### d.	Настройте первые пять линий VTY на каждом устройстве, чтобы поддерживать только SSH-соединения и с локальной аутентификацией.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
