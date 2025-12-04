@@ -84,6 +84,11 @@ c.	Используйте команду show interfaces trunk для прове
 #### c.	Генерируйте криптоключи с помощью 1024 битного модуля.
 #### d.	Настройте первые пять линий VTY на каждом устройстве, чтобы поддерживать только SSH-соединения и с локальной аутентификацией.
 
+<img width="595" height="327" alt="image" src="https://github.com/user-attachments/assets/e8f99d71-5e28-49c1-b671-eea05096c2b9" />
+<img width="578" height="223" alt="image" src="https://github.com/user-attachments/assets/a90a708c-4b68-4c48-a5c7-d301657c832e" />
+
+
+
 
 
 
