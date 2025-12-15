@@ -95,6 +95,22 @@ c.	Используйте команду show interfaces trunk для прове
 <img width="458" height="215" alt="image" src="https://github.com/user-attachments/assets/0ca2554d-88ed-49e1-bf59-6190530d4a84" />
 <img width="678" height="87" alt="image" src="https://github.com/user-attachments/assets/a1472941-5e5e-4c6f-ac94-affd9413e8b4" />
 <img width="677" height="95" alt="image" src="https://github.com/user-attachments/assets/5d85564a-2ee2-46b6-b194-e5e893adf327" />
+<img width="651" height="135" alt="image" src="https://github.com/user-attachments/assets/3de849f8-5139-4276-84c7-363ed9e8c2e6" />
+<img width="652" height="150" alt="image" src="https://github.com/user-attachments/assets/16427217-281f-48d7-8cf4-fb74da031c14" />
+<img width="658" height="169" alt="image" src="https://github.com/user-attachments/assets/e72d1b11-5738-4ff4-ae23-5e8be3107fb5" />
+<img width="334" height="177" alt="image" src="https://github.com/user-attachments/assets/6a3cfd0f-7d9e-4e1b-803d-fbc78a8a2095" />
+
+### Часть 7. Настройка и проверка списков контроля доступа (ACL)
+
+### Политика1. Сеть Sales не может использовать SSH в сети Management (но в  другие сети SSH разрешен). 
+### Политика 2. Сеть Sales не имеет доступа к IP-адресам в сети Management с помощью любого веб-протокола (HTTP/HTTPS). Сеть Sales также не имеет доступа к интерфейсам R1 с помощью любого веб-протокола. Разрешён весь другой веб-трафик (обратите внимание — Сеть Sales  может получить доступ к интерфейсу Loopback 1 на R1).
+### Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. 
+### Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
+
+
+
+
+
 
 
 
