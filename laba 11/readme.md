@@ -85,7 +85,24 @@ c.	Используйте команду show interfaces trunk для прове
 #### d.	Настройте первые пять линий VTY на каждом устройстве, чтобы поддерживать только SSH-соединения и с локальной аутентификацией.
 
 <img width="595" height="327" alt="image" src="https://github.com/user-attachments/assets/e8f99d71-5e28-49c1-b671-eea05096c2b9" />
-<img width="578" height="223" alt="image" src="https://github.com/user-attachments/assets/a90a708c-4b68-4c48-a5c7-d301657c832e" />
+<img width="578" height="223" alt="image" src="https://github.com/user-attachments/assets/a90a708c-4b68-4c48-a5c7-d301657c832e" /> 
+
+<img width="701" height="331" alt="image" src="https://github.com/user-attachments/assets/03674d75-e397-49b9-b8b9-8f17109a7b5b" />  
+<img width="455" height="218" alt="image" src="https://github.com/user-attachments/assets/09985be2-6408-45a0-b30e-3cd664e7d17c" />  
+<img width="460" height="221" alt="image" src="https://github.com/user-attachments/assets/76dbb3b7-ba6e-40ff-8adb-0f84b34032d5" />  
+<img width="463" height="224" alt="image" src="https://github.com/user-attachments/assets/0861a78a-8216-43e6-92bf-bbae800558d7" />
+<img width="457" height="215" alt="image" src="https://github.com/user-attachments/assets/a906119c-16a1-41eb-a50e-d46827d26b2c" />
+<img width="458" height="215" alt="image" src="https://github.com/user-attachments/assets/0ca2554d-88ed-49e1-bf59-6190530d4a84" />
+<img width="678" height="87" alt="image" src="https://github.com/user-attachments/assets/a1472941-5e5e-4c6f-ac94-affd9413e8b4" />
+<img width="677" height="95" alt="image" src="https://github.com/user-attachments/assets/5d85564a-2ee2-46b6-b194-e5e893adf327" />
+
+
+
+
+
+
+
+
 
 
 
