@@ -114,6 +114,21 @@ c.	Используйте команду show interfaces trunk для прове
 ### Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
 <img width="426" height="102" alt="image" src="https://github.com/user-attachments/assets/ec64b558-40cf-44f4-bda5-3aab8a11c5dc" />
 
+<img width="911" height="390" alt="image" src="https://github.com/user-attachments/assets/94fd17d7-44fc-4676-bb48-e288f71d3229" />
+
+<img width="484" height="402" alt="image" src="https://github.com/user-attachments/assets/5f9c73e8-2495-4360-a865-f47fefe9c88e" />
+
+<img width="495" height="382" alt="image" src="https://github.com/user-attachments/assets/6af35764-b2e3-4f1e-8d4d-8c2543e77701" />
+
+<img width="661" height="167" alt="image" src="https://github.com/user-attachments/assets/c38dbd28-f98b-4d12-942f-e64a1153ecd5" />
+
+<img width="276" height="133" alt="image" src="https://github.com/user-attachments/assets/ac095a58-5f63-4fa3-827c-170ed44e3cd9" />
+
+
+
+
+
+
 
 
 
