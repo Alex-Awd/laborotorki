@@ -61,7 +61,86 @@ Pro Inside global Inside local Outside local Outside global
 <output omitted>
 #### f.	Учитывая, что пул ограничен тремя адресами, NAT для пула адресов недостаточно для нашего приложения. Очистите преобразование NAT и статистику, и мы перейдем к PAT.  
 
-<img width="321" height="89" alt="image" src="https://github.com/user-attachments/assets/dc22c0fd-38de-4a75-b052-aca616b97b03" />
+<img width="321" height="89" alt="image" src="https://github.com/user-attachments/assets/dc22c0fd-38de-4a75-b052-aca616b97b03" />  
+
+## Часть 3. Настройка и проверка PAT для IPv4.
+
+### Шаг 1. Удалите команду преобразования на R1.  
+### Шаг 2. Добавьте команду PAT на R1.
+
+<img width="562" height="34" alt="image" src="https://github.com/user-attachments/assets/5b8fcd8b-0ddc-4b9c-981f-a6947612f615" />
+
+### Шаг 3. Протестируйте и проверьте конфигурацию.
+#### a.	Давайте проверим, что PAT работает. С PC-B,  запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды show ip nat translations.  
+
+<img width="626" height="113" alt="image" src="https://github.com/user-attachments/assets/bba682d7-b962-4969-8ac9-e050f7fec96d" />
+
+#### Во что был транслирован внутренний локальный адрес PC-B?
+ #### 209.165.200.226
+####Какой тип адреса NAT является переведенным адресом?  
+#### Inside Global
+
+#### Чем отличаются выходные данные команды show ip nat translations из упражнения NAT?
+#### Введите ваш ответ здесь.
+
+#### Ответы могут различаться. В списке отсутствует выделенный канал преобразования между внутренним и внешним адресом.
+
+#### b.	С PC-A, запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды show ip nat translations.
+
+<img width="629" height="194" alt="image" src="https://github.com/user-attachments/assets/fa228727-039d-42f7-9e4b-c612cef8541e" />
+
+#### c.	Генерирует трафик с нескольких устройств для наблюдения PAT. На PC-A и PC-B используйте параметр -t с командой ping, чтобы отправить безостановочный ping на интерфейс Lo1 R2 (ping -t 209.165.200.1), затем вернитесь к R1 и выполните команду show ip nat translations
+
+<img width="626" height="392" alt="image" src="https://github.com/user-attachments/assets/ab58a4d5-1de4-43fd-8372-8a55da154c9c" />
+
+#### Как маршрутизатор отслеживает, куда идут ответы? 
+### Ему присваиваются уникальные номера портов.
+
+#### Шаг 4. На R1 удалите команды преобразования nat pool.
+
+<img width="568" height="104" alt="image" src="https://github.com/user-attachments/assets/b5a99c37-447a-4cfd-8744-f690281208ec" />  
+
+#### Шаг 5. Добавьте команду PAT overload, указав внешний интерфейс.
+
+<img width="571" height="34" alt="image" src="https://github.com/user-attachments/assets/7eef77f3-e135-4dd4-a5b5-66453cda50c6" />  
+
+#### Шаг 6. Протестируйте и проверьте конфигурацию. 
+### a.	Давайте проверим PAT, чтобы интерфейс работал. С PC-B,  запустите эхо-запрос интерфейса Lo1 (209.165.200.1) на R2. Если эхо-запрос не прошел, выполните отладку. На R1 отобразите таблицу NAT на R1 с помощью команды show ip nat translations.
+
+<img width="623" height="173" alt="image" src="https://github.com/user-attachments/assets/20a271eb-be0e-4e53-8a30-f4bc75719c34" />  
+
+##### b.	Сделайте трафик с нескольких устройств для наблюдения PAT. На PC-A и PC-B используйте параметр -t с командой ping для отправки безостановочного ping на интерфейс Lo1 R2 (ping -t 209.165.200.1). На S1 и S2 выполните привилегированную команду exec ping 209.165.200.1 повторить 2000. Затем вернитесь к R1 и выполните команду show ip nat translations.  
+
+<img width="699" height="282" alt="image" src="https://github.com/user-attachments/assets/bfce84c0-1c4c-404b-9831-0f70bd860600" />  
+
+### Часть 4. Настройка и проверка статического NAT для IPv4.
+#### Шаг 2. На R1 настройте команду NAT, необходимую для статического сопоставления внутреннего адреса с внешним адресом.
+
+<img width="546" height="28" alt="image" src="https://github.com/user-attachments/assets/93087ca4-c8da-4629-9671-907dcb784160" />
+
+### Шаг 3. Протестируйте и проверьте конфигурацию.
+#### a.	Давайте проверим, что статический NAT работает. На R1 отобразите таблицу NAT на R1 с помощью команды show ip nat translations, и вы увидите статическое сопоставление.
+
+<img width="620" height="71" alt="image" src="https://github.com/user-attachments/assets/44b72041-9820-481a-b4a0-0498f558e40a" />
+
+#### b.	Таблица перевода показывает, что статическое преобразование действует. Проверьте это, запустив ping  с R2 на 209.165.200.229. Плинги должны работать.  
+
+<img width="598" height="73" alt="image" src="https://github.com/user-attachments/assets/f44146b8-132a-4fd9-8c70-7cad93145863" />  
+
+#### c.	На R1 отобразите таблицу NAT на R1 с помощью команды show ip nat translations, и вы увидите статическое сопоставление и преобразование на уровне порта для входящих pings.
+
+<img width="632" height="157" alt="image" src="https://github.com/user-attachments/assets/e435022a-06df-4c45-89e2-49d899377068" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
