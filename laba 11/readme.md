@@ -111,6 +111,11 @@ c.	Используйте команду show interfaces trunk для прове
 ### Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. 
 <img width="408" height="114" alt="image" src="https://github.com/user-attachments/assets/900ef78e-a006-4fee-8e30-6818d4278d43" />
 
+##### Обединеные политики с 1-3
+
+<img width="472" height="155" alt="image" src="https://github.com/user-attachments/assets/4de762fa-d005-4354-bc4c-3b816d6b22d4" />
+
+
 ### Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
 <img width="426" height="102" alt="image" src="https://github.com/user-attachments/assets/ec64b558-40cf-44f4-bda5-3aab8a11c5dc" />
 
