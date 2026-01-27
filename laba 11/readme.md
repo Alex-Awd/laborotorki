@@ -111,9 +111,10 @@ c.	Используйте команду show interfaces trunk для прове
 ### Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. 
 <img width="408" height="114" alt="image" src="https://github.com/user-attachments/assets/900ef78e-a006-4fee-8e30-6818d4278d43" />
 
-##### Обединеные политики с 1-3
+##### Обединеные политики с 1-3 + требования ограничения доступа ко всем (кроме лупбек) интерфейсам роутера по 80 и 443 портам
 
-<img width="472" height="155" alt="image" src="https://github.com/user-attachments/assets/4de762fa-d005-4354-bc4c-3b816d6b22d4" />
+<img width="463" height="181" alt="image" src="https://github.com/user-attachments/assets/22f2b8eb-2565-429f-b3a8-e5b35a53147d" />
+
 
 
 ### Политика 4: Cеть Operations  не может отправлять ICMP эхозапросы в сеть Sales. Разрешены эхо-запросы ICMP к другим адресатам. 
