@@ -102,16 +102,7 @@ c.	Используйте команду show interfaces trunk для прове
 
 ### Часть 7. Настройка и проверка списков контроля доступа (ACL)
 
-### Политика1. Сеть Sales не может использовать SSH в сети Management (но в  другие сети SSH разрешен). 
-<img width="443" height="57" alt="image" src="https://github.com/user-attachments/assets/ec573a48-cc38-4a30-83f5-424b9f5a3a3d" />
-
-### Политика 2. Сеть Sales не имеет доступа к IP-адресам в сети Management с помощью любого веб-протокола (HTTP/HTTPS). Сеть Sales также не имеет доступа к интерфейсам R1 с помощью любого веб-протокола. Разрешён весь другой веб-трафик (обратите внимание — Сеть Sales  может получить доступ к интерфейсу Loopback 1 на R1).
-<img width="444" height="93" alt="image" src="https://github.com/user-attachments/assets/2166dfae-90b9-4627-a5b7-6717cfa34710" />
-
-### Политика3. Сеть Sales не может отправлять эхо-запросы ICMP в сети Operations или Management. Разрешены эхо-запросы ICMP к другим адресатам. 
-<img width="408" height="114" alt="image" src="https://github.com/user-attachments/assets/900ef78e-a006-4fee-8e30-6818d4278d43" />
-
-##### Обединеные политики с 1-3 + требования ограничения доступа ко всем (кроме лупбек) интерфейсам роутера по 80 и 443 портам
+ ##### Обединеные политики с 1-3 + требования ограничения доступа ко всем (кроме лупбек) интерфейсам роутера по 80 и 443 портам
 
 <img width="463" height="181" alt="image" src="https://github.com/user-attachments/assets/22f2b8eb-2565-429f-b3a8-e5b35a53147d" />
 
