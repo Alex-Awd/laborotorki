@@ -104,7 +104,8 @@ c.	Используйте команду show interfaces trunk для прове
 
  ##### Обединеные политики с 1-3 + требования ограничения доступа ко всем (кроме лупбек) интерфейсам роутера по 80 и 443 портам
 
-<img width="463" height="181" alt="image" src="https://github.com/user-attachments/assets/22f2b8eb-2565-429f-b3a8-e5b35a53147d" />
+<img width="460" height="306" alt="image" src="https://github.com/user-attachments/assets/a48956bd-60fb-4214-a8a3-f4e40f4a0e49" />
+
 
 
 
